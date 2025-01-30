@@ -10,14 +10,14 @@ export default function Filedrop() {
         if (inputFile) {
             const reader = new FileReader();
 
+            reader.readAsText(inputFile);
+
             reader.onload = (e: any) => {
                 setFile({
                     tsx_file: inputFile,
                     preview_text: e.target.result,
                 });
             };
-
-            reader.readAsText(inputFile);
         }
     };
 
