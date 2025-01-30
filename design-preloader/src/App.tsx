@@ -1,7 +1,12 @@
 import "./App.css";
+import Filedrop from "./components/files/Filedrop.tsx";
 
 function App() {
-    return <></>;
+    return (
+        <>
+            <Filedrop />
+        </>
+    );
 }
 
 export default App;
