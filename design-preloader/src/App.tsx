@@ -1,10 +1,10 @@
 import "./App.css";
-import Filedrop from "./components/files/Filedrop.tsx";
+import FileInput from "./components/files/FileInput.tsx";
 
 function App() {
     return (
         <>
-            <Filedrop />
+            <FileInput />
         </>
     );
 }
