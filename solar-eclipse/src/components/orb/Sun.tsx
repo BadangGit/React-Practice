@@ -3,7 +3,7 @@ import "./Sun.css";
 
 interface SunProps {
     pos: { top: string; left: string };
-    shape: { width: string; height: string };
+    shape: { width: string; height: string; borderRadius: string };
 }
 
 const Sun: React.FC<SunProps> = ({ pos, shape }) => {
