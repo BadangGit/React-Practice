@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-import Sun from "./planet/Sun";
+import Sun from "./orb/Sun";
 
 function App() {
     const noonPostion = {
@@ -9,7 +9,7 @@ function App() {
         left: "50%",
     };
 
-    const planetShape = {
+    const orbShape = {
         width: "80px",
         height: "80px",
         borderRadius: "50%",
@@ -17,7 +17,7 @@ function App() {
 
     return (
         <div>
-            <Sun pos={noonPostion} shape={planetShape} />
+            <Sun pos={noonPostion} shape={orbShape} />
         </div>
     );
 }
