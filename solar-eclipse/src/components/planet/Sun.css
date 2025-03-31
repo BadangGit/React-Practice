@@ -1,8 +1,15 @@
 .sun {
-    background: rgb(255, 188, 0);
     background: radial-gradient(
         circle,
         rgba(255, 188, 0, 1) 0%,
         rgba(255, 239, 0, 1) 100%
+    );
+}
+
+.sunshine {
+    background: radial-gradient(
+        circle at var(--sun-postion-x, 0) var(--sun-postion-y, 0),
+        rgba(255, 239, 0, 1) 0%,
+        rgba(255, 239, 0, 0) 100%
     );
 }
