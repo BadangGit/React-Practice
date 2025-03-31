@@ -1,0 +1,17 @@
+.moon {
+    background: radial-gradient(
+        circle,
+        rgb(30, 64, 255, 1) 0%,
+        rgb(30, 64, 255, 0.3) 100%
+    );
+}
+
+.moonshine {
+    background: radial-gradient(
+        circle,
+        rgb(30, 64, 255, 1) 0%,
+        rgb(30, 64, 255, 0.3) 30%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    filter: blur(0.4rem);
+}
