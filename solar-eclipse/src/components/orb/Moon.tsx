@@ -8,24 +8,13 @@ interface MoonProps {
 
 const Moon: React.FC<MoonProps> = ({ shape }) => {
     return (
-        <div style={{ position: "relative", left: "500px", top: "500px" }}>
+        <div style={{ position: "absolute", left: "500px", top: "500px" }}>
             <div
                 style={{
                     ...shape,
-                    position: "absolute",
                     transform: "translate(-50%, -50%)",
                 }}
                 className="moon"></div>
-            <div
-                style={{
-                    position: "absolute",
-                    width: "300px",
-                    height: "300px",
-                    borderRadius: "50%",
-                    transform: "translate(-50%, -50%)",
-                    zIndex: -1,
-                }}
-                className="moonshine"></div>
         </div>
     );
 };

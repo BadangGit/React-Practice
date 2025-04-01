@@ -8,28 +8,26 @@ interface SunProps {
 
 const Sun: React.FC<SunProps> = ({ pos, shape }) => {
     return (
-        <div>
+        <div style={{ position: "relative" }}>
             <div
                 style={{
                     ...pos,
                     ...shape,
                     position: "absolute",
+                    transform: "translate(-50%, -50%)",
                 }}
                 className="sun"></div>
 
             <div
-                style={
-                    {
-                        position: "fixed",
-                        top: "0px",
-                        left: "0px",
-                        width: "100vw",
-                        height: "100vh",
-                        zIndex: -1,
-                        "--sun-postion-x": `${pos.left}`,
-                        "--sun-postion-y": `${pos.top}`,
-                    } as React.CSSProperties
-                }
+                style={{
+                    ...pos,
+                    position: "absolute",
+                    width: "250px",
+                    height: "250px",
+                    borderRadius: "50%",
+                    transform: "translate(-50%, -50%)",
+                    zIndex: -1,
+                }}
                 className="sunshine"></div>
         </div>
     );
