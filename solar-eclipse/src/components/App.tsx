@@ -24,6 +24,11 @@ function App() {
         <div>
             <Sun pos={noonPostion} shape={orbShape} shineColor={randomColor} />
             <Moon pos={noonPostion} shape={orbShape} />
+
+            <div className="footer">
+                <h1>Solar Eclipse</h1>
+                <h2>drag the moon</h2>
+            </div>
         </div>
     );
 }
