@@ -4,9 +4,10 @@ import "../../styles/Sun.css";
 interface SunProps {
     pos: { top: string; left: string };
     shape: { width: string; height: string; borderRadius: string };
+    shineColor: string;
 }
 
-const Sun: React.FC<SunProps> = ({ pos, shape }) => {
+const Sun: React.FC<SunProps> = ({ pos, shape, shineColor }) => {
     return (
         <div style={{ position: "relative" }}>
             <div
@@ -19,15 +20,18 @@ const Sun: React.FC<SunProps> = ({ pos, shape }) => {
                 className="sun"></div>
 
             <div
-                style={{
-                    ...pos,
-                    position: "absolute",
-                    width: "250px",
-                    height: "250px",
-                    borderRadius: "50%",
-                    transform: "translate(-50%, -50%)",
-                    zIndex: -1,
-                }}
+                style={
+                    {
+                        ...pos,
+                        position: "absolute",
+                        width: "250px",
+                        height: "250px",
+                        borderRadius: "50%",
+                        transform: "translate(-50%, -50%)",
+                        zIndex: -1,
+                        "--sunshine-color": shineColor,
+                    } as React.CSSProperties
+                }
                 className="sunshine"></div>
         </div>
     );
