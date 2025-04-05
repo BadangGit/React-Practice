@@ -26,7 +26,7 @@ const SolarEclipse: React.FC = () => {
             <Sun pos={noonPostion} shape={orbShape} shineColor={randomColor} />
             <Moon pos={noonPostion} shape={orbShape} />
 
-            <div className="footer">
+            <div className={styles.footer}>
                 <h1>Solar Eclipse</h1>
                 <h3>drag the moon</h3>
             </div>
