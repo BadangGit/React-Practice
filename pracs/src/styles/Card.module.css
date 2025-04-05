@@ -8,6 +8,8 @@
     border-radius: 15px;
 
     box-shadow: 10px 10px 25px 5px rgba(0, 0, 0, 0.3);
+
+    position: relative;
 }
 
 .card:hover {
