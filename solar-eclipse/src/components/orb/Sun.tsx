@@ -24,8 +24,8 @@ const Sun: React.FC<SunProps> = ({ pos, shape, shineColor }) => {
                     {
                         ...pos,
                         position: "absolute",
-                        width: "250px",
-                        height: "250px",
+                        width: "300px",
+                        height: "300px",
                         borderRadius: "50%",
                         transform: "translate(-50%, -50%)",
                         zIndex: -1,
