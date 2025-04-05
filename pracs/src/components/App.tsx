@@ -25,7 +25,7 @@ function App() {
             <div className="card-container">
                 {cards.map((CardComponent, index) => (
                     <div className="card">
-                        <Card key={index} content={SolarEclipse} />
+                        <Card key={index} content={CardComponent} />
                     </div>
                 ))}
             </div>
