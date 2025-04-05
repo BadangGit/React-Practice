@@ -1,5 +1,5 @@
 import React from "react";
-import "./Moon.css";
+import "../../styles/Moon.css";
 
 interface MoonProps {
     pos: { top: string; left: string };

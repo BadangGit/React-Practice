@@ -1,5 +1,5 @@
 import React from "react";
-import "./Sun.css";
+import "../../styles/Sun.css";
 
 interface SunProps {
     pos: { top: string; left: string };
