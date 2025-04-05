@@ -27,7 +27,7 @@ function App() {
 
             <div className="footer">
                 <h1>Solar Eclipse</h1>
-                <h2>drag the moon</h2>
+                <h3>drag the moon</h3>
             </div>
         </div>
     );
