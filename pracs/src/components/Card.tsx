@@ -1,11 +1,19 @@
 import React from "react";
 
-import "../styles/Card.css";
+import styles from "../styles/Card.module.css";
 
-const Card: React.FC = () => {
+interface CardProps {
+    content: React.FunctionComponent;
+}
+
+const Card: React.FC<CardProps> = ({ content: Content }) => {
     return (
-        <div className="card">
-            <div className="card-content"></div>
+        <div className={styles.card}>
+            <div className={styles.cardContent}>
+                <Content />
+            </div>
         </div>
     );
 };
+
+export default Card;
